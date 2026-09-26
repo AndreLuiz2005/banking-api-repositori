@@ -23,4 +23,16 @@ public class UserController {
     public UserResponse criarUsuario(@Valid @RequestBody UserRequest request) {
         return userService.criarUsuario(request);
     }
+
+    @GetMapping("/{id}")
+    public UserResponse buscarUsuario(@PathVariable Long id) {
+
+        User user = userService.buscarPorId(id);
+
+        return new UserResponse(
+                user.getId(),
+                user.getNome(),
+                user.getEmail()
+        );
+    }
 }

@@ -9,11 +9,11 @@ public class UserRequest {
     @NotBlank(message = "Nome é obrigatório")
     private String nome;
 
-    @NotBlank(message = "email é obrigatório")
-    @Email(message = "Email inválido")
+    @NotBlank(message = "E-mail é obrigatório")
+    @Email(message = "E-mail inválido")
     private String email;
 
-    @NotBlank(message = "senha é obrigatório")
+    @NotBlank(message = "Senha é obrigatória")
     @Size(min = 6, message = "A senha deve conter no minimo 6 caracteres")
     private String senha;
 
