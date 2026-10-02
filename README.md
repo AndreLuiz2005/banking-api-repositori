@@ -18,3 +18,58 @@ O projeto simula operações bancárias como **depósito, saque e transferência
 O Banking API foi desenvolvido como um projeto prático para consolidar conhecimentos em desenvolvimento backend com Java e Spring Boot.
 
 A aplicação possui autenticação de usuários, gerenciamento de contas bancárias e operações financeiras, utilizando PostgreSQL para persistência dos dados e JWT para autenticação das requisições protegidas.
+
+---
+
+## 🚀 Funcionalidades
+
+- 👤 Cadastro de usuários
+- 🏦 Criação automática de conta bancária após o cadastro
+- 🔐 Autenticação utilizando JWT
+- 🔒 Senhas armazenadas utilizando BCrypt
+- 🔎 Consulta de usuário
+- 💰 Consulta da própria conta bancária
+- 💵 Depósito
+- 💸 Saque
+- 🔄 Transferência entre contas
+- 📋 Histórico de transações
+- ✅ Validação de dados
+- ⚠️ Tratamento global de exceções
+- 🛡️ Proteção dos endpoints com Spring Security
+- 🔄 Controle transacional das operações financeiras
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Utilização |
+|---|---|
+| **Java 21** | Linguagem principal |
+| **Spring Boot 4.1.0** | Framework da aplicação |
+| **Spring Web** | Desenvolvimento da API REST |
+| **Spring Data JPA** | Persistência de dados |
+| **Hibernate** | ORM |
+| **Spring Security** | Autenticação e autorização |
+| **JJWT** | Geração e validação de JWT |
+| **BCrypt** | Hash das senhas |
+| **PostgreSQL** | Banco de dados |
+| **Maven** | Gerenciamento do projeto e build |
+| **Git** | Controle de versão |
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto utiliza uma arquitetura organizada em camadas:
+
+```text
+Controller
+    |
+    v
+Service
+    |
+    v
+Repository
+    |
+    v
+PostgreSQL
